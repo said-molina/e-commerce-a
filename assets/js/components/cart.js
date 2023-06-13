@@ -117,8 +117,8 @@ function cart(db, printProducts) {
 
     function showIVA() {
       const total = showTotal();
-      const iva = total / 1.16; 
-      const totalIVA = total + iva;
+      const iva = total * 0.16; 
+      const totalIVA = iva;
 
       return totalIVA.toFixed(2);
     }
@@ -127,8 +127,8 @@ function cart(db, printProducts) {
 
     function showTotalWithIVA() {
       const total = showTotal();
-      const iva = total * 1.16; 
-      const totalWithIVA = total + iva;
+      const iva2 = total * 1.16; 
+      const totalWithIVA = iva2;
 
       return totalWithIVA.toFixed(2);
     }
